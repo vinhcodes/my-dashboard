@@ -6,8 +6,8 @@ interface HeaderProps {
 
 export default function Header({ title }: HeaderProps) {
   return (
-    <header className="border-b border-gray-200 p-4 flex items-center justify-between">
-      <h1 className="text-lg font-medium text-gray-900">{title}</h1>
+    <header className="border-b border-gray-200 p-4 pl-7 flex items-center justify-between">
+      <h1 className="text-sm font-medium text-gray-900">{title}</h1>
       <div className="w-64 relative">
         <Search className="absolute left-3 top-2.5 h-4 w-4 text-gray-400" />
         <input

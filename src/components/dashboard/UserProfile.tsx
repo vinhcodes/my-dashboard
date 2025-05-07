@@ -8,7 +8,7 @@ interface UserProfileProps {
   
   export default function UserProfile({ name, initials = 'ME', avatarUrl = '/avatar.png' }: UserProfileProps) {
     return (
-      <div className="flex items-center px-3 py-2 text-lg mb-10">
+      <div className="flex items-center px-3 py-2 text-sm mb-10">
        <div className="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center text-xs mr-3 relative">
   {avatarUrl 
     ? <Image 

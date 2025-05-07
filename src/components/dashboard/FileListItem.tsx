@@ -22,7 +22,7 @@ export default function FileListItem({ item, onSelect }: FileListItemProps) {
 
   return (
     <div 
-      className={`flex items-center justify-between p-3 hover:bg-gray-100 border-b border-gray-200 rounded-md ${
+      className={`flex items-center justify-between p-1 hover:bg-gray-100 border-b border-gray-200 rounded-md ${
         isSelected ? "bg-blue-50" : ""
       }`}
     >
@@ -43,11 +43,11 @@ export default function FileListItem({ item, onSelect }: FileListItemProps) {
             <FileText size={20} />
           </div>
         )}
-        <span className="text-lg text-gray-900">{item.name}</span>
+        <span className="text-sm text-gray-900">{item.name}</span>
       </div>
       <div className="flex items-center">
-        <span className="text-lg text-gray-500 mr-2">{item.date}</span>
-        <div className="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center text-xs relative">
+        <span className="text-sm text-gray-500 mr-2">{item.date}</span>
+        <div className="w-7 h-7 rounded-full bg-gray-300 flex items-center justify-center text-xs relative">
           <Image
             fill
             alt="Avatar"

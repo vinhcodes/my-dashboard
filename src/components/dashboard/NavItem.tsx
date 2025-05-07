@@ -9,7 +9,7 @@ export default function NavItem({ icon, text, path, active }: NavItemProps) {
   return (
     <Link
       href={path}
-      className={`flex items-center px-3 py-2 text-lg rounded-md w-full ${
+      className={`flex items-center px-3 py-2 text-sm rounded-md w-full ${
         active ? 'bg-gray-100 text-gray-900' : 'text-gray-600 hover:bg-gray-200'
       }`}
     >

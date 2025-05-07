@@ -10,11 +10,11 @@ interface SidebarProps {
 
 export default function Sidebar({ currentPath }: SidebarProps) {
   return (
-    <div className="min-w-sm border-r border-gray-200 bg-slate-50 flex flex-col">
+    <div className="min-w-xs border-r border-gray-200 bg-slate-50 flex flex-col">
       <Logo />
 
       <div>
-        <button className="flex gap-2 ml-3 h-12 rounded-xl py-2 px-5 bg-gray-800 text-white text-lg">
+        <button className="flex gap-1 ml-3 h-9 rounded-xl px-3 bg-gray-800 text-white text-sm">
           <PlusIcon size={16} className="mr-1 my-auto" />
           <span className="my-auto">Upload</span>
         </button>
